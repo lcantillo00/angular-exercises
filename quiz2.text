@@ -1,0 +1,85 @@
+1--Name and describe the two main operations of a stack (to add and remove data).
+
+ push .. is the one that add the data to the array in de last position ;
+ pop ... check if the array is not  null put in a temp variable the last element of the array
+         var temp= arr.length-1;
+         and them save the rest of the array .
+         and return the temp variable.
+2---Name and describe the two main operations of a queue (to add and remove data).
+  enqueue..add data to the array in last position of the array.
+  dequeue.. take out the data that is storage in the first position of the array  array[0].
+            the way the function work is declare a variable temp and asign it to the array[0]
+            then save the rest of the array with  this.data=this.data.slice(1) wich means save
+            the array starting from position 1 and then return  the temp variable
+
+ 3-- Draw the tree resulting from adding the following sequence of numbers to an empty tree: 30, 45, 15, 10, 50, 40, 20, 27
+
+--------------------30
+--------------15---------45
+----------10---20------40----50
+-----------------27
+
+4- Is this tree balanced? If not, which rotation needs to be done? (Use the following rotation as an example: rightRotation(30), or leftRotation(10))
+
+ the tree is balance.
+
+ 5--Now add 29. Is the tree balanced? If not, which rotation needs to be done? (Use the following rotation as an example: rightRotation(30), or leftRotation(10))
+  now the tree is not balance
+  -------------------30
+  -------------15----------45
+  ----------10---27------40---50
+  -------------20---29
+
+
+6-- Consider the following tree:
+------5
+---2-----8
+-1--3
+0
+the first node out of balance is node # 5
+
+7-
+
+-----------2
+------1-------5
+---0---------3----8
+
+  8-What are the four main steps of mergesort?
+     -split the array in 2
+     - merge sort left half
+     - merge sort right half
+     -join two array
+
+    9- Say you have a program which handles the login queue to a game server.
+    The game server is able to log in one person every one second.
+    Assume that one second must elapse after a person logs in with an empty queue
+     before they are removed from the queue. Draw the state of the queue at 12:00:06,
+     considering the following sequence of events:
+
+     at 12:00:06 in the queue is going to look like this :
+            At 12:00:03 Darkwing Duck logs in
+            At 12:00:04 Evil Mickey logs in.
+
+
+10- What is an angular directive?
+     is a extension of html
+
+
+11- When specifying an angular directive, you write a function which must return an object called:
+
+     -- Directive Definition object
+
+12-What is the relationship between html, the $scope construct, and angular expressions?
+(Expressions are the ones that are written like so: {{quote}} ).
+
+-  the scope is the binding part between the html and the javaScript (controller)
+ the scope is and object with property and methods that you define in your controller
+ and you  can get access to them when you use expression in the html  like the example {{quote}}
+
+
+13-In order to send ajax requests in Angular, the most accepted programming convention is to create an angular:
+   -- $http
+
+14- In order to create a service, you must use the following angular function:
+
+  - angularApp.factory
